@@ -1,0 +1,43 @@
+.custom-checkbox {
+    color: red;
+
+    [type="checkbox"] {
+        display: none;
+
+        &:checked ~ .fake-checkbox {
+            background-color: #6edc5e;
+
+            &::before {
+                left: 14px;
+            }
+        }
+    }
+
+    .fake-checkbox {
+        display: inline-block;
+        width: 30px;
+        height: 18px;
+        border-radius: 9px;
+        background-color: #dddddd;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 14px;
+            height: 14px;
+            background-color: #fff;
+            border-radius: 50%;
+
+            transition: left .3s ease, background-color .3s ease;
+
+            position: absolute;
+            top: 30%;
+            left: 2px;
+            margin-top: -3.5px;
+        }
+    }
+
+    & span {
+        font-size: 24px;
+    }
+}

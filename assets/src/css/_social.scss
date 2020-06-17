@@ -1,0 +1,54 @@
+.social {
+    list-style: none;
+
+    &__item {
+        padding-left: 50px;
+        position: relative;
+        margin-bottom: 20px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            transition: .5s;
+            left: 8px;
+            top: -2px;
+            width: 35px;
+            height: 35px;
+            background-image: url('../../img/sprite.png');
+            background-repeat: no-repeat;
+            background-size: 165px;
+        }
+
+        &_vkontakte::before {
+            background-position: -5px -38px;
+        }
+
+        &_vkontakte:hover::before {
+            background-position: -5px 0;
+        }
+
+        &_facebook::before {
+            background-position: -46px -38px;
+        }
+
+        &_facebook:hover::before {
+            background-position: -46px 0;
+        }
+
+        &_twitter::before {
+            background-position: -86px -38px;
+        }
+
+        &_twitter:hover::before {
+            background-position: -86px 0;
+        }
+
+        &_mailru::before {
+            background-position: -127px -38px;
+        }
+
+        &_mailru:hover::before {
+            background-position: -127px 0;
+        }       
+    }
+}

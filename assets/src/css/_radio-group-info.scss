@@ -1,0 +1,36 @@
+$colorgreen: #6aa239;
+$colorblue: #2299f8;
+$colororange: #f46e00;
+$colorred: #dc4415;
+
+[type="radio"]:checked ~ .radio-group__indicator_green::before {
+  background-color: $colorgreen;
+}
+
+[type="radio"]:checked ~ .radio-group__indicator_blue::before {
+  background-color: $colorblue;
+}
+
+[type="radio"]:checked ~ .radio-group__indicator_orange::before {
+  background-color: $colororange;
+}
+
+[type="radio"]:checked ~ .radio-group__indicator_red::before {
+  background-color: $colorred;
+}
+
+.radio-group__indicator_green {
+    border: 1px solid $colorgreen;
+}
+
+.radio-group__indicator_blue {
+  border: 1px solid $colorblue;
+}
+
+.radio-group__indicator_orange {
+  border: 1px solid $colororange;
+}
+
+.radio-group__indicator_red {
+  border: 1px solid $colorred;
+}
